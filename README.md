@@ -1,4 +1,4 @@
-Data-Cleaning-in-MySQL
+Data-Cleaning-in-MySQL (preview) ![Data-Cleaning-in-MySQL](Preview.png)
 📌 Overview
 This project demonstrates practical SQL data cleaning skills used in real-world data analyst roles.
 The objective was to transform raw, inconsistent layoff data into a clean, structured, and analysis-ready dataset using MySQL.
