@@ -1,145 +1,49 @@
-# Data-Cleaning-in-MySQL
-Skills used in real-world
-
-SQL Data Cleaning Project
-Project Overview
-
-This project demonstrates practical SQL skills used in real-world data analyst roles, with a strong focus on data cleaning and preparation. The objective was to take raw, inconsistent layoff data and transform it into a clean, structured, and analysis-ready dataset using MySQL.
-
-The project reflects common data challenges faced in business environments and showcases the ability to write efficient, readable, and well-structured SQL queries.
-
-Tools and Technologies
-
-MySQL
-
-MySQL Workbench
-
-SQL
-
-Dataset Description
-
-The dataset contains company layoff information with fields such as:
-
-Company
-
-Location
-
-Industry
-
-Total laid off
-
-Percentage laid off
-
-Date
-
-Company stage
-
-Country
-
-The original data included multiple quality issues, including:
-
-Duplicate records
-
-Inconsistent text formatting
-
-Leading and trailing spaces
-
-Null and blank values
-
-Incorrect date formats
-
-Data Cleaning Process
-
-The following steps were performed to clean and standardize the data:
-
-1. Staging Tables
-
-Created staging tables to preserve the original dataset.
-
-Ensured all transformations were applied safely without altering raw data.
-
-2. Duplicate Removal
-
-Used ROW_NUMBER() with PARTITION BY to identify duplicate rows.
-
-Removed duplicates while retaining a single valid record per group.
-
-3. Text Standardization
-
-Applied TRIM() to remove leading and trailing spaces.
-
-Standardized inconsistent company, industry, and country names.
-
-4. Handling Null and Blank Values
-
-Converted blank values to NULL for consistency.
-
-Filled missing values where logically possible using existing data.
-
-5. Date Formatting
-
-Converted date columns into proper DATE data types.
-
-Ensured consistency across all records.
-
-6. Final Validation
-
-Verified data integrity after cleaning.
-
-Ensured the dataset was ready for analysis and reporting.
-
-SQL Concepts and Techniques Used
-
-Data Definition Language (DDL)
-
-Data Manipulation Language (DML)
-
-Common Table Expressions (CTEs)
-
-Window functions (ROW_NUMBER)
-
-Conditional logic (CASE)
-
-String functions (TRIM)
-
-Filtering with WHERE
-
-Null handling (IS NULL)
-
-Outcome
-
-Duplicate records successfully removed
-
-Text fields standardized
-
-Missing and invalid values handled appropriately
-
-Clean, structured dataset suitable for analysis
-
-Professional Relevance
-
-Data cleaning is a core responsibility of data analysts and typically consumes the majority of analysis time. This project demonstrates:
-
-Strong SQL fundamentals
-
-Attention to data quality
-
-Safe and structured query design
-
-Readiness to work with real business datasets
-
-How to Run the Project
-
-Clone this repository.
-
-Open the SQL file in MySQL Workbench.
-
-Execute the queries sequentially.
-
-Review the cleaned final table.
-
-Author
-
-Mpho Ecan
-Aspiring Data Analyst
-South Africa
+Data-Cleaning-in-MySQL
+📌 Overview
+This project demonstrates practical SQL data cleaning skills used in real-world data analyst roles.
+The objective was to transform raw, inconsistent layoff data into a clean, structured, and analysis-ready dataset using MySQL.
+
+1. 🛠 Tools & Technologies
+ - MySQL
+ - MySQL Workbench
+ - SQL (DDL, DML, CTEs, Window Functions)
+
+2. Data Cleaning Process
+
+ (a) Staging Tables
+  - Preserved the original dataset in staging tables.
+  - Ensured transformations were safe and reversible.
+
+ (b) Duplicate Removal
+  - Applied ROW_NUMBER() with PARTITION BY to identify duplicates.
+  - Retained one valid record per group.
+
+ (c) Text Standardization
+  - Used TRIM() to remove spaces.
+  - Standardized company, industry, and country names.
+
+ (d) Handling Nulls & Blanks
+  - Converted blanks to NULL.
+  - Filled missing values logically where possible.
+
+ (e) Date Formatting
+  - Converted text dates into proper DATE data types.
+  - Ensured consistency across all records.
+
+ (f) Final Validation
+  - Verified data integrity.
+  - Confirmed dataset was ready for analysis and reporting.
+
+3. 📊 SQL Concepts Applied
+ - Common Table Expressions (CTEs)
+ - Window Functions (ROW_NUMBER)
+ - Conditional Logic (CASE)
+ - String Functions (TRIM)
+ - Null Handling (IS NULL)
+ - Filtering with WHERE
+
+4. ✅ Outcomes
+ - Removed duplicate records.
+ - Standardized text fields.
+ - Corrected missing and invalid values.
+ - Produced a clean dataset suitable for analysis.
